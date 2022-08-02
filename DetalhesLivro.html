@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+    <html class="pag">
+    <head>
+    <meta charset="UTF-8"/>
+        <title>Detalhes do Livro</title>
+        <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'> 
+        <link rel="stylesheet" type="text/css" href="estilo_isabella.css">
+        <script>
+            function Solicitar()
+            {
+                alert("Solicitação encaminhada com sucesso!")
+            }
+        </script>
+    </head>
+
+    <header>
+        <div class="layout">
+        
+        <img class="logo" src="img/Nav_Logo.png" alt="Book Swap" width="100px" height="50PX" >
+
+            <center> <form class="busca">
+                <input type="text" id="textBusca" placeholder="Buscar">
+                <a href="#"><img class="iconeBusca" src="img/search.png"></a>
+              </form> </center>
+
+              <ul>
+               
+                <li class="dropdown">
+                    <a href="#" class="menu">Perfil</a>
+                    <div class="dropdown_menu">
+                      <a class="item" href="#">Alterar dados</a>
+                      <a class="item" href="#">Cadastrar Livro</a>
+                      <a class="item"href="#">Solicitações</a>
+                      <a class="item" href="#">Pontos</a>
+                      <a class="item" href="#">Editar dados</a>
+                      <a class="item" href="#">Sair</a>
+                    </div></li>
+                
+                     <a class="menu" href=”#”>Notificações</a>
+              </ul>
+
+        </div>
+
+        <nav>
+        <div class="inicio">
+            <ul>
+                <a class="menu" href=”#”>Home</a>
+               <a class="menu" href=”#”>Feed</a>
+               <a class="menu" href=”#”>Sobre</a>
+       </ul>
+    </nav>
+
+    </header>
+
+
+
+    <main>
+
+    <body>
+        <h1><span class="titulo">Detalhes do Livro</span></h1>
+
+        <table class="detalhes">
+            <tbody>
+                <tr><td class="livro"><img src="img/Livro.jpg" width="290px" height="470px"></td>
+                    <td>
+                        <h3 class="texto">TODAS AS SUAS (IM)PERFEIÇÕES</h3>
+                        <p class="autor">Collen Hoover</p>
+                        <p class="texto"><b>Sinopse:</b> Todas as suas imperfeições narra a história de Quinn e Graham. <br>
+                            Eles se conhecem no pior dia de suas vidas; ela chega mais cedo de uma viagem <br>
+                            para surpreender o noivo, ele testemunha a traição da namorada. <br></p>
+
+                        <hr>
+
+                        <p class="obs"><b>Observações do usuário:</b> <br>
+                            Livro em boas condições, não há marcações nem páginas dobradas. Está muito bem cuidado. <br>
+                            Li apenas uma vez, mas recomendo demais. <br>
+                        </p>
+
+                        <details>
+                            <summary class="texto">Ver mais detalhes</summary>
+                          
+                            <div id="mais" class="collapse">
+
+                                <p class="mais_info"><b>Ano/Edição:</b>2018<br>
+                                <b>Nº de Páginas:</b>284<br>
+                                <b>Gênero:</b>Romance<br>
+                                <b>História Pessoal:</b> Tive uma ótima experiência com o livro. O livro nos leva a refletir muito e foi assim que fiquei após termina-lo em dois dias.<br> 
+                                    Tenho certeza que muitos irâo gostar do desenrolar da história.</p><br>
+
+                                   
+                            </div>
+                          
+                        </details>
+
+                        <br>
+                        <a href="#" class="link">FÓRUNS "TODAS AS SUAS IMPERFEIÇÕES", "COLLEN HOOVER"</a>
+
+
+
+                       <td> <p>
+                            <div>
+
+                                <ul class="lendo">
+                                   <li class="opcoes">
+                                      <div>Já Li</div>
+                                      <div class="value">2</div>
+                                   </li>
+                                   <br>
+                                   <li class="opcoes">
+                                      <div>Lendo</div>
+                                      <div class="value">3</div>
+                                   </li>
+                                   <br>
+                                   <li class="opcoes">
+                                      <div>Abandonei</div>
+                                      <div class="value">1</div>
+                                   </li>
+                                   <br>
+                                   <li class="opcoes">
+                                      <div>Recomendo</div>
+                                      <div class="value">2</div>
+                                   </li>
+                                </ul>
+
+                            </div>
+                        </p></td>
+
+                          <tr><td>
+                            <button type="submit" onclick="Solicitar()"  class="solicitar_troca">SOLICITAR TROCA</button>
+                            
+                        </td></tr>
+        
+
+                    </td></tr>
+
+
+                    
+            </tbody>
+        </table>
+
+    </main>
+
+
+
+
+
+    </body>
+    </html>

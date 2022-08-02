@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Cadastro de Livro</title>
+        <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'> 
+        <link rel="stylesheet" type="text/css" href="estilo_isabella.css">
+    </head>
+    
+    <header>
+      <div class="layout">
+      
+      <img class="logo" src="img/Nav_Logo.png" alt="Book Swap" width="100px" height="50PX" >
+
+          <center> <form class="busca">
+              <input type="text" id="textBusca" placeholder="Buscar">
+              <a href="#"><img class="iconeBusca" src="img/search.png"></a>
+            </form> </center>
+
+            <ul>
+             
+              <li class="dropdown">
+                  <a href="#" class="menu">Perfil</a>
+                  <div class="dropdown_menu">
+                    <a class="item" href="#">Alterar dados</a>
+                    <a class="item" href="CadastrodoLivro.html">Cadastrar Livro</a>
+                    <a class="item"href="#">Solicitações</a>
+                    <a class="item" href="#">Pontos</a>
+                    <a class="item" href="#">Editar dados</a>
+                    <a class="item" href="#">Sair</a>
+                  </div>
+              
+            </ul>
+
+      </div>
+
+      <nav>
+      <div class="inicio">
+          <ul>
+              <a class="menu" href=”#”>Home</a>
+             <a class="menu" href=”#”>Feed</a>
+             <a class="menu" href=”#”>Sobre</a>
+     </ul>
+  </nav>
+
+  </header>
+
+
+
+   
+    <main>
+
+    <body>
+        <div class="container" >
+             
+            <div class="content">      
+              <div id="cadastro">
+                <form method="post"> 
+                  <h1>Cadastre seu livro</h1> 
+                   
+                  <p> 
+                    <label class="cadastro" for="titulo">Título*:</label><br>
+                    <input id="titulo" name="titulo" required="required" type="text" placeholder="Digite o título do livro." />
+                  </p>
+                   
+                  <p> 
+                    <label class="cadastro" for="autor">Autor*:</label><br>
+                    <input id="autor" name="autor" required="required" type="text" placeholder="Digite o nome do autor do livro"/> 
+                  </p>
+                   
+                  <p> 
+                    <label class="cadastro" for="ano">Ano/Edição*:</label>
+                    <input id="ano" name="ano" required="required" type="text" placeholder="Digite o ano do livro"/>
+                    <label class="cadastro" for="nmr_pag">Nº de Páginas:</label>
+                    <input id="nmr_pag" name="nmr_pag" required="required" type="text" placeholder="ex.:150 "/>
+                </p>
+
+                <p>
+                    <label class="cadastro" for="genero">Gênero*:</label><br>
+                    <select name="genero" required="required">
+                        <option value="1">Fantasia</option>
+                        <option value="2">Ficção Científica</option>
+                        <option value="3">Distopia</option>
+                        <option value="4">Ação e Aventura</option>
+                        <option value="5">Ficção Policial</option>
+                        <option value="6">Horror</option>
+                        <option value="7">Thriller e Suspense</option>
+                        <option value="8">Ficção Histórica</option>
+                        <option value="9">Romance</option>
+                        <option value="10">Ficção Feminina</option>
+                        <option value="11">LGBTQIA+</option>
+                        <option value="12">Ficção Contemporânea</option>
+                        <option value="13">Realismo Mágico</option>
+                        <option value="14">Graphic Novel</option>
+                        <option value="15">Conto</option>
+                        <option value="16">Young Adult - Jovem Adulto</option>
+                        <option value="17">New Adult - Novo Adulto</option>
+                        <option value="18">Infantil</option>
+                        <option value="19">Autobiografia</option>
+                        <option value="20">Biografia</option>
+                        <option value="21">Gastronomia</option>
+                        <option value="22">Arte e Fotografia</option>
+                        <option value="23">Autoajuda</option>
+                        <option value="24">História</option>
+                        <option value="25">Viagem</option>
+                        <option value="26">Humor</option>
+                        <option value="27">Crimes Reais</option>
+                        <option value="28">Como Fazer</option>
+                        <option value="29">Paternidade e Família</option>
+                        <option value="30">Tecnologia e Ciência</option>
+                        <option value="31">Religião e Espiritualidade</option>
+                        <option value="32">Humanidade e Ciências sociais</option>
+                        <option value="33">Escolares</option>
+                        <option value="34">Suspense Psicológico</option>
+                      </select>
+                </p>
+
+                <p>
+                    <label class="cadastro" for="sinopse">Sinopse*:</label><br>
+                    <input id="sinopse" name="sinopse" required="required" type="text" placeholder="Digite o sinopse do livro" />
+                </p> 
+                
+                <p>
+                  <label class="cadastro" for="status">Status:</label>
+                    <select name="status">
+                    <option value="1">Já Li</option>
+                    <option value="2">Abandonei</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label class="cadastro" for="historia">História Pessoal*:</label>
+                    <br><textarea id="historia" name="historia" type="text" placeholder="Digite aqui sua experiência pessoal com o livro"></textarea>
+                </p> 
+
+                <p>
+                    <label class="cadastro" for="descricao">Descrição do Livro*:</label><br>
+                    <textarea id="descricao" name="descricao" required="required" type="text" placeholder="Faça uma descrição detalhada do estado atual do livro(ex: 'Possui orelhas, palavras marcadas', etc.)"></textarea> 
+                </p> 
+
+                <p>
+                    <label class="cadastro" for="foto">Faça o upload de uma foto do livro:</label><br>
+                    <button id="btn1" required="required" type="file" accept="image/png, image/jpeg"><img src="File-Upload-icon.png"></button>
+
+                </p>
+                
+                <br>
+
+                  <p> 
+                    <a href="DetalhesLivro.html">
+                    <center><button class="texto" type="submit" value="Cadastrar">CADASTRAR</button></center>
+                    </a>
+                  </p>
+                   
+                </form>
+              </div>
+            </div>
+          </div>  
+</body>
+
+</main>
+    
+</html>
