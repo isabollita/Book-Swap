@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Book Swap</title>
+    <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="estilo_kimberlly.css">
+</head>
+
+    <body class="gif">
+        <main>
+            <div class="conteudo">
+
+                <form class="card" method="post">
+  
+                    <h1>CADASTRO</h1>
+                    <h3>Dados Pessoais</h3>
+
+                    <p>
+                        <label class="cadastro" for="nome" required>Nome:</label><br>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo">
+                    </p>
+                    
+                    <p>
+                       <label class="cadastro" required>Gênero:</label><br>
+                        <input type="radio" id="feminino" name="genero" value="feminino">
+                        <label class="cadastro" for="feminino">
+                            <span style="margin-left: -110px;">Feminino</span>
+                        </label><br>
+                        <input type="radio" id="masculino" name="genero" value="masculino">
+                        <label class="cadastro" for="masculino">
+                            <span style="margin-left: -110px;">Masculino</span>
+                        </label><br>
+                        <input type="radio" id="naobinario" name="genero" value="naobinario">
+                        <label class="cadastro" for="naobinario">
+                            <span style="margin-left: -110px;">Não-binário
+                        </label><br>
+                        <input type="radio" id="indefinido" name="genero" value="indefinido">
+                        <label class="cadastro" for="indefinido">
+                            <span style="margin-left: -110px;">Prefiro não informar</span>
+                        </label>
+                    </p>
+
+                    <p>
+                        <label class="cadastro" for="datadenascimento" required>Data de nascimento:</label><br>
+                        <input type="date" id="nome" name="nome">
+                    </p>
+                    <p>
+                       <label class="cadastro" for="cpf"required>CPF:</label><br>
+                        <input type="text" id="cpf" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+                            placeholder="000.000.000-00">
+                    </p>
+
+                    <p>
+                        <label class="cadastro" for="telefone" required>Telefone:</label><br>
+                        <input type="tel" id="telefone" name="telefone" pattern="\(\d{2}\)\d{5}-\d{4}"
+                            placeholder="(00) 00000-0000">
+                    </p>
+
+
+                    <p>
+                        <label class="cadastro" for="escolaridade" required>Escolaridade:</label>
+                        <select name="escolaridade">
+                            <option value="1"></option>
+                            <option value="2">Ensino Fundamental</option>
+                            <option value="3">Ensino Médio</option>
+                            <option value="4">Ensino Superior</option>
+                            <option value="5">Pós-Graduação</option>
+                            <option value="6">Mestrado</option>
+                            <option value="7">Doutorado</option>
+                        </select>
+                    </p>
+
+                    <p>
+                    <center><button class="botao2" type="submit" value="prosseguir">
+                        <a href="CadastroDeUsuario2.html">PROSSEGUIR</a>
+                    </center>
+                    </p>
+                     
+                   
+
+                </form>
+            </div>
+        </main>
+    </body>
+
+
+</html>
